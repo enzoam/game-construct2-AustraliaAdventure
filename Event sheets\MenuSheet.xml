@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MenuSheet</name>
+    <events>
+        <event-block sid="3776807744484938">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2124138894132667" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9686636881503246" type="Audio">
+                    <param id="0" name="Audio file">Aboriginal</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="5794824985549474" type="System">
+                    <param id="0" name="Variable">STARTSCENE</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6328466121399173">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="9880318756486401" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">START</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="9661153106355042" type="Audio" />
+                <action id="-2" name="Go to layout" sid="4020479991562995" type="System">
+                    <param id="0" name="Layout">LEVEL1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5729329153564672">
+            <conditions>
+                <condition id="6" name="On button pressed" sid="7571758033110425" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="9933356415510094" type="Audio" />
+                <action id="-2" name="Go to layout" sid="3812922909279421" type="System">
+                    <param id="0" name="Layout">LEVEL1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4134328873912948">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="3690160612870634" type="Mouse">
+                    <param id="0" name="Object">START</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set blend mode" sid="7642433495548919" type="START">
+                    <param id="0" name="Blend mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7863140669170008">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="5429655850189499" type="Mouse">
+                    <param id="0" name="Object">SETUP</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set blend mode" sid="2614296839034705" type="SETUP">
+                    <param id="0" name="Blend mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1517505119156097">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="9335789011843717" type="Mouse">
+                    <param id="0" name="Object">CREDITS</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set blend mode" sid="2614273705450894" type="CREDITS">
+                    <param id="0" name="Blend mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="290828460768826">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="2796555760877667" type="Mouse">
+                    <param id="0" name="Object">QUIT</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set blend mode" sid="1576649834481305" type="QUIT">
+                    <param id="0" name="Blend mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6578472453592687">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="3893426311817639" type="Mouse">
+                    <param id="0" name="Object">START</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set blend mode" sid="498486416577339" type="START">
+                    <param id="0" name="Blend mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1729925083909625">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="7963170837131156" type="Mouse">
+                    <param id="0" name="Object">SETUP</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set blend mode" sid="7397670938132368" type="SETUP">
+                    <param id="0" name="Blend mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4023265230288077">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="4414921516562964" type="Mouse">
+                    <param id="0" name="Object">CREDITS</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set blend mode" sid="9457219232395876" type="CREDITS">
+                    <param id="0" name="Blend mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5589408679649636">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="8379650194745821" type="Mouse">
+                    <param id="0" name="Object">QUIT</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set blend mode" sid="9714313470542975" type="QUIT">
+                    <param id="0" name="Blend mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
